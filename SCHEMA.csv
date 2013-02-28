@@ -1,0 +1,16 @@
+Column Name, Description,Data Type, Required
+id,A unique identifier for this request,String,Yes
+created_at,When the request was filed,DateTime,Yes
+resolved_at,When the request was ultimately resolved,DateTime,Yes
+status,The current status of the ticket,String,Yes
+description,A human readable description of the request,String,Yes
+type,The categorization of the request,String,Yes
+priority,The priority that the request was given,String,No
+source,How the request was filed,String,No
+street_address,The street address of the location,String,No
+city,The city in which the request was filed,String,No
+state,The state in which the request was filed,String,No
+latitude,The latitude of the location in WGS84. Locations can be fuzzed to anonymize them.,Float,Yes
+longitude,"The longitude of the location in WGS84. Locations can be ""fuzzed"" to anonymize them",Float,Yes
+department,The department or agency servicing the request,String,No
+photo,A URL to a photo that was submitted along with the request,URL,No
